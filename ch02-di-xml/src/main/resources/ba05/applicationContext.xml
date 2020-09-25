@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+    <!--构造注入-->
+    <bean id="myStudent" class="org.example.ba05.Student" autowire="byType">
+        <property name="name" value="李四"/>
+        <property name="age" value="23"/>
+        <!--自动注入,给引用类型赋值，
+        byName(按名称注入，类中的属性名和bean 的名称和数据类型一样，spring就能实现)
+         -->
+    </bean>
+
+<!--    声明school 对象-->
+<!--    <bean id = "myschool" class="org.example.ba05.School">-->
+<!--            <property name="name" value="计算技术研究所"/>-->
+<!--            <property name="address" value="沈阳"/>-->
+<!--    </bean>-->
+<!--    声明school 的子类-->
+    <bean id="primarySchool" class="org.example.ba05.primarySchool">
+        <property name="name" value="北京小学"/>
+        <property name="address" value="北京的大区小学"/>
+    </bean>
+
+
+    </beans>

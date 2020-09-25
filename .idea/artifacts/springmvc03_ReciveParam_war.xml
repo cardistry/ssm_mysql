@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springmvc03_ReciveParam:war">
+    <output-path>$PROJECT_DIR$/springmvc03_ReciveParam/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>springmvc03_ReciveParam</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="springmvc03_ReciveParam-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="springmvc03_ReciveParam:war exploded" />
+    </root>
+  </artifact>
+</component>

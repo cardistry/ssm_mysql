@@ -1,0 +1,19 @@
+# Project exclude paths
+/ch02-di-xml/target/
+/ch04-di-anno/target/
+/ch05-aop-lead/target/
+/ch06-aop-aspectj/target/
+/ch07-hello-mybatis/target/
+/ch08_mybatis_dao/target/
+/ch09_mybatis_proxy/target/
+/ch10_mybatis_params/target/
+/ch11_mybatis_return/target/
+/ch12_mybatis_dynamic_sql/target/
+/ch13_spring_mybatis/target/
+/ch14_spring_transaction/target/
+/maven/target/
+/out/
+/springmvc01_hello/target/
+/springmvc02_RequstMapping/target/
+/springmvc03_ReciveParam/target/
+/springmvc04_Return/target/

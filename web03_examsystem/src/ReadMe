@@ -1,0 +1,16 @@
+任务:在线考试管理系统---用户信息管理模块
+
+子任务:
+    用户信息注册
+    用户信息查询
+    用户信息删除
+    用户信息更新
+
+准备工作:
+    create table user(
+        userId int primary key auto_increment,
+        userName varchar(50),
+        password varchar(50),
+        sex char(1),
+        email varchar(50)
+    )

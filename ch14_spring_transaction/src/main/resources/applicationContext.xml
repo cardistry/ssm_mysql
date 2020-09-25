@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          init-method="init" destroy-method="close">
+        <!--    把 数据库的配置配置信息写在一个独立的文件中-->
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="maxActive" value="${jdbc.maxActive}"/>
+    </bean>
+<!--    声明的是mybatis 中提供的sqlSessionFactoryBean类，这个类内部创建sqlSessionFactory类-->
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+<!--        set注入，把数据库连接池付给了dataSource属性-->
+        <property name="dataSource" ref="dataSource"/>
+      <!-- mybatis 的主配置文件的位置
+        configLocation属性是Resource 类型，读取配置文件
+        它的赋值，使用value ，指定文件的路径，使用classpath表示文件的位置-->
+
+        <property name="configLocation" value="classpath:mybatis.xml"/>
+    </bean>
+<!--    创建dao 对象，使用SqlSession的getMapper(Student.class )-->
+<!--    MapperScannerConfigure :内部调用getMapper()生成每个dao接口的代理对象。-->
+   <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+<!--       指定SqlSessionFactory对象的id-->
+       <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+<!--       指定包名，包名是dao 接口所在的包名-->
+<!--       MapperScannerConfigurer会扫描这个包中的所有接口，把每个接口都执行一次-->
+<!--       getMapper()方法，得到每个接口的dao对象，dao 对象的名称是接口名的首字母小写
+            创建好的dao 对象放入spring的容器中的-->
+       <property name="basePackage" value="com.bjpowernode.dao"/>
+   </bean>
+    <bean id="buyService" class="com.bjpowernode.service.impl.BuyGoodsServiceImpl">
+        <property name="goodsDao" ref="goodsDao"/>
+        <property name="saleDao" ref="saleDao"/>
+    </bean>
+
+<!--    使用注解的事务处理-->
+ <!--   声明式事务处理：和源代码完全分离的
+    声明事务处理器对象-->
+    <bean id="transactionManager"
+    class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+        <!--          id 自定义名称，表示<tx:advice> 和</tx:advice>之间的配置内容的-->
+    <tx:advice id="myAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!--tx:method :给具体的方法配置事务属性，method 可以有多个，分给不同的方法设置属性-->
+            <!--   name：方法名称 1）完整的方法名称，不带包和类  因此还要另外配置类
+                             2）使用通配符，使用*表示任意字符
+              propagation：传播行为，枚举值
+              isolation:隔离级别
+              rollbackfor :指定的异常类名，全限定名称，发生异常时一定会回滚-->
+            <tx:method name="buy" propagation="REQUIRED" isolation="DEFAULT"
+                       rollback-for="java.lang.NullPointerException,com.bjpowernode.exception"/>
+
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <!--    配置切入点表达式：指定在哪些包中类，要使用事务
+            id :切入点表示式的名称，唯一值
+            expression :切入点表达式，指定哪些类要使用事务，aspectj 会创建代理对象-->
+        <aop:pointcut id="servicePt" expression="execution(* *..service..*.*(..)))"/>
+        <!--            配置增强器：关联advice 和pointcut-->
+        <!-- advice-ref:通知上面tx:advice 哪里的配置
+         pointcut-ref:切入点表达式的id-->
+        <aop:advisor advice-ref="myAdvice" pointcut-ref="servicePt"/>
+    </aop:config>
+
+<!--    使用spring 的事务处理，
+        1. 声明事务处理器-->
+<!--    id 自定义-->
+<!--    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+<!--        连接的数据库，指定数据源-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
+<!--    2.开启事务注解驱动，告诉spring使用注解管理事务，创建代理对象　-->
+<!--    <tx:annotation-driven transaction-manager="transactionManager"/> ;-->
+</beans>

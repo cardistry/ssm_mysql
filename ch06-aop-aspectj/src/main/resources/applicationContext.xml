@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/aop
+         https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="SomeService" class="com.bjpowernode.ba01.SomeServiceImpl2"/>
+
+    <bean id="myAspect" class="com.bjpowernode.ba01.MyAspect"/>
+
+<!--    声明自动代理生产器，使用aspectj 框架内部的功能，创建目标对象的代理对象，创建代理对象是在-->
+<!--    内存中实现的，修改目标对象的内存中的结构，创建代理对象，所以目标对象啊就是被修改后的代理对象-->
+
+<!--    会把spring 容器中所有的目标对象，一次性都生成代理对象-->
+<!--    强制使用cglib 动态代理 需要添加proxy-target-class="true"-->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+</beans>

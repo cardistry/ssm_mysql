@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ch10_mybatis_params" />
+        <module name="ch07-hello-mybatis" />
+        <module name="spring01_hello" />
+        <module name="ch12-hello-mybatis" />
+        <module name="ch01-maven" />
+        <module name="ch10-hello-mybatis" />
+        <module name="ch02-di-xml" />
+        <module name="springmvc04_Return" />
+        <module name="ch08_mybatis_dao" />
+        <module name="springmvc03_ReciveParam" />
+        <module name="springmvc02_RequstMapping" />
+        <module name="ch05-aop-lead" />
+        <module name="ch09-hello-mybatis" />
+        <module name="ch13_spring_mybatis" />
+        <module name="ch06-aop-aspectj" />
+        <module name="ch14_spring_transaction" />
+        <module name="ch04-di-anno" />
+        <module name="ch04-di-anno.imi" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ch01-maven" target="13" />
+      <module name="ch02-di-xml" target="13" />
+      <module name="ch04-di-anno" target="13" />
+      <module name="ch04-di-anno.imi" target="13" />
+      <module name="ch05-aop-lead" target="13" />
+      <module name="ch06-aop-aspectj" target="13" />
+      <module name="ch07-hello-mybatis" target="13" />
+      <module name="ch08_mybatis_dao" target="13" />
+      <module name="ch09-hello-mybatis" target="13" />
+      <module name="ch10-hello-mybatis" target="13" />
+      <module name="ch10_mybatis_params" target="13" />
+      <module name="ch12-hello-mybatis" target="13" />
+      <module name="ch13_spring_mybatis" target="13" />
+      <module name="ch14_spring_transaction" target="13" />
+      <module name="spring01_hello" target="13" />
+      <module name="springmvc01_hello" target="13" />
+      <module name="springmvc02_RequstMapping" target="13" />
+      <module name="springmvc03_ReciveParam" target="13" />
+      <module name="springmvc04_Return" target="13" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ch01-maven" options="" />
+      <module name="ch02-di-xml" options="" />
+      <module name="ch04-di-anno" options="" />
+      <module name="ch04-di-anno.imi" options="" />
+      <module name="ch05-aop-lead" options="" />
+      <module name="ch06-aop-aspectj" options="" />
+      <module name="ch07-hello-mybatis" options="" />
+      <module name="ch08_mybatis_dao" options="" />
+      <module name="ch09-hello-mybatis" options="" />
+      <module name="ch10-hello-mybatis" options="" />
+      <module name="ch10_mybatis_params" options="" />
+      <module name="ch12-hello-mybatis" options="" />
+      <module name="ch13_spring_mybatis" options="" />
+      <module name="ch14_spring_transaction" options="" />
+      <module name="spring01_hello" options="" />
+      <module name="springmvc01_hello" options="" />
+      <module name="springmvc02_RequstMapping" options="" />
+      <module name="springmvc03_ReciveParam" options="" />
+      <module name="springmvc04_Return" options="" />
+    </option>
+  </component>
+</project>

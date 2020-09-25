@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+    <!--构造注入-->
+    <bean id="myStudent" class="org.example.ba03.Student">
+        <constructor-arg value="张三"/>
+        <constructor-arg value="23"/>
+        <constructor-arg ref = "mySchool"/>
+    </bean>
+
+    <!--声明school 对象-->
+    <bean id = "mySchool" class="org.example.ba03.School">
+        <property name="name" value="计算技术研究所"/>
+        <property name="address" value="沈阳"/>
+    </bean>
+
+</beans>

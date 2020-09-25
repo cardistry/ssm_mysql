@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bjpowernode.dao.StudentDao">
+<!--    parameterType 不是强制的，一般不写-->
+    <select id="selectStudentById" parameterType="java.lang.Integer" resultType="com.bjpowernode.domain.Student">
+        select id,name,email,age from student where id = #{id};
+    </select>
+    <!--/*
+    使用#{}之后，mybatis 执行sql 使用的是jdbc 的PreparedStatement 对象
+    由mybatis 执行下面的代码
+    1.mybatis 创建connection ，PreparedStatement对象
+    String sql= "select id ,name,email,age from student where id = ?"
+    PreparedStatement pst = conn.preparedStatement(sql);
+    pst.senInt(1,1001);
+    2.执行sql 封装为resultType="com.bjpowernode.domain.Student"这个对象
+    ResultSet rs = ps.executeQuerry();
+    while(rs.next()){
+    从数据表中取一行数据，存到每一个java 对象属性中。
+    Student student = new Student();
+    student.setId(rs.getInt("id"));
+    student.setName(rs.getString("name");
+    student.setEmail(rs.getString("email"));
+    student.setAge(rs.getInt("age"));
+    }
+    return student;
+    */
+-->
+<!--    多个参数，使用param 做属性名-->
+    <select id="selectMuliParm" resultType="com.bjpowernode.domain.Student">
+        select id,name,email,age from student where name = #{myname} or  age = #{myage};
+    </select>
+<!--    多个参数，使用java 对象的属性值，作为实际参数值-->
+<!--    语法格式：#{属性名，javaType = 类型名称，java 中的数据类型
+        jdbcType = 数据类型 mybatis 中的数据类型-->
+<!--    <select id="selectMultiObject" resultType="com.bjpowernode.domain.Student">-->
+<!--            select id,name,email,age from student where-->
+<!--            name = #{paramName,javaType = java.lang.String,jdbcType = VARCHAR}-->
+<!--            or age = #{paraAge,javaType = java.lang.Integer,jdbcType = INTEGER};-->
+
+<!--    </select>-->
+<!--    简化版-->
+    <select id="selectMultiObject" resultType="com.bjpowernode.domain.Student">
+            select id,name,email,age from student where
+            name = #{paraName}
+            or age = #{paraAge};
+
+    </select>
+
+</mapper>

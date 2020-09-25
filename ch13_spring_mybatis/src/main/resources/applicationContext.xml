@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          init-method="init" destroy-method="close">
+        <!--    把 数据库的配置配置信息写在一个独立的文件中-->
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="maxActive" value="${jdbc.maxActive}"/>
+    </bean>
+<!--    声明的是mybatis 中提供的sqlSessionFactoryBean类，这个类内部创建sqlSessionFactory类-->
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+<!--        set注入，把数据库连接池付给了dataSource属性-->
+        <property name="dataSource" ref="dataSource"/>
+      <!-- mybatis 的主配置文件的位置
+        configLocation属性是Resource 类型，读取配置文件
+        它的赋值，使用value ，指定文件的路径，使用classpath表示文件的位置-->
+
+        <property name="configLocation" value="classpath:mybatis.xml"/>
+    </bean>
+<!--    创建dao 对象，使用SqlSession的getMapper(Student.class )-->
+<!--    MapperScannerConfigure :内部调用getMapper()生成每个dao接口的代理对象。-->
+   <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+<!--       指定SqlSessionFactory对象的id-->
+       <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+<!--       指定包名，包名是dao 接口所在的包名-->
+<!--       MapperScannerConfigurer会扫描这个包中的所有接口，把每个接口都执行一次-->
+<!--       getMapper()方法，得到每个接口的dao对象，dao 对象的名称是接口名的首字母小写
+            创建好的dao 对象放入spring的容器中的-->
+       <property name="basePackage" value="com.bjpowernode.dao"/>
+   </bean>
+
+
+</beans>

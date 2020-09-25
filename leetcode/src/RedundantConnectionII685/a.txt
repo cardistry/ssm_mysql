@@ -1,0 +1,25 @@
+package RedundantConnectionII685;
+
+class Solution {
+    public int[] findRedundantDirectedConnection(int[][] edges) {
+        int len = edges.length;
+        int [] res = new int[2];
+        int record[] = new int[len+1];
+        for(int i = 0; i < len + 1; ++i)
+            record[i] = i;
+        int i = 0;
+        for( i = 0;i < len;++i){
+            int son = edges[i][1];
+            int father = edges[i][0];
+            int tmp = father;
+            while (record[son] != father){
+                record[son] = father;
+                father = record[father];
+            }
+            if(father == tmp)
+                break;
+        }
+        res[0] = edges[i][0];
+        res[1] = edges[i][1];
+        return res;
+}

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="web11_httpsession:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/web11_httpsession_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="web11_httpsession/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="web11_httpsession" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

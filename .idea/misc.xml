@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/ch04-di-anno" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc01_hello" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc02_RequstMapping" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc03_ReciveParam" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc04_Return" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/maven/pom.xml" />
+        <option value="$PROJECT_DIR$/ch02-di-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/ch04-di-anno/pom.xml" />
+        <option value="$PROJECT_DIR$/ch05-aop-lead/pom.xml" />
+        <option value="$PROJECT_DIR$/ch06-aop-aspectj/pom.xml" />
+        <option value="$PROJECT_DIR$/ch07-hello-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/ch08_mybatis_dao/pom.xml" />
+        <option value="$PROJECT_DIR$/ch09_mybatis_proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/ch10_mybatis_params/pom.xml" />
+        <option value="$PROJECT_DIR$/ch11_mybatis_return/pom.xml" />
+        <option value="$PROJECT_DIR$/ch12_mybatis_dynamic_sql/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/ch13_spring_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/ch14_spring_transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/spring01_hello/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc01_hello/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc02_RequstMapping/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc03_ReciveParam/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc04_Return/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="true" project-jdk-name="13" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

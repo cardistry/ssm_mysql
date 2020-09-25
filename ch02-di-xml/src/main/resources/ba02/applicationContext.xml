@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--spring 中java 基本数据类型和string 都是简单类型-->
+
+
+    <!--引用类型的注入-->
+
+    <bean id = "myStudent2" class = "org.example.ba02.Student">
+        <property name="name" value="ahui"/>
+        <property name="age" value="20"/>
+        <property name="school" ref="mySchool"/>
+     </bean>
+
+    <!--声明school 对象-->
+    <bean id = "mySchool" class="org.example.ba02.School">
+        <property name="name" value="计算技术研究所"/>
+        <property name="address" value="沈阳"/>
+     </bean>
+
+</beans>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+<!--    settings 控制mybatis 的全局行为-->
+    <settings>
+<!--        设置mybatis 的输出日志-->
+<!--        name="logImpl" 日志名-->
+<!--        value="STDOUT_LOGGING" 日志输出到控制台-->
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
+    <!--    default 必须和某个enviorment 的id 值一样-->
+<!--    告诉Mybatis 使用哪个数据库的连接信息，便于切换数据库-->
+    <environments default="mydev">
+<!--        //一个数据库的配置-->
+<!--        //id 唯一值，自定义-->
+        <environment id="mydev">
+<!--            transactionManager : mybatis 的事务类型-->
+<!--            type: jdbc (表示使用jdbc 中的Connection 对象的commit ，rollback 做事务处理)-->
+            <transactionManager type="JDBC"/>
+<!--            datasource 数据源，连接数据库的-->
+<!--            type: 表示数据源的类型，POOLED 表示使用连接池-->
+            <dataSource type="POOLED">
+<!--                driver ,uel,username,password 是固定的，不能自定义-->
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/bjpowernode"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+<!--    sql 映射文件的位置，一个mapper 标签指定一个文件的位置，从类路径开始的路径-->
+    <mappers>
+        <mapper resource="com/bjpowernode/dao/StudentDao.xml"/>
+    </mappers>
+</configuration>
