@@ -13,7 +13,22 @@
     <script type="text/javascript">
         $(function(){
             $("button").click(function () {
-                alert("button click");
+               // alert("button click");
+                $.ajax({
+                    //url:"returnVoid-ajax.do",
+                    url:"returnStudentJson.do",
+                    data:{
+                        name:"zhangsan",
+                        age:20
+                    },
+                    type:"post",
+                    //dataType:"json",
+                    success:function (resp) {
+                        //resp 从服务器返回的是json格式的字符串
+                        //jqery 会把字符串转为json对象，赋值给resp形参
+                        alert(resp.name +" " + resp.age);
+                    }
+                })
             })
         })
     </script>
