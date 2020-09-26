@@ -24,7 +24,22 @@
     <mvc:default-servlet-handler> 和@requestMapping 有冲突，会接受所有的
     servlet,需要加入annotation-driven 来解决
     -->
+<!--    <mvc:annotation-driven/>-->
+<!--    <mvc:default-servlet-handler/>-->
+
+    <!--第二种处理静态资源的方式
+    mvc:resources 加入后框架会创建 ResourceHttpRequestHandler这个处理器对象。
+    让这个对象处理静态资源的访问，不依赖tomcat服务器。
+    mapping:访问静态资源的uri地址， 使用通配符 **
+    location：静态资源在你的项目中的目录位置。
+
+    images/**:表示 images/p1.jpg  , images/user/logo.gif , images/order/history/list.png
+-->
+    <mvc:resources mapping="/image/**" location="/image/"/>
+    <mvc:resources mapping="/html/**" location="/html/"/>
+    <mvc:resources mapping="/js/**" location="/js/"/>
+
+<!--    mvc:resources 和@ReusetMapping 有一定的冲突-->
     <mvc:annotation-driven/>
-    <mvc:default-servlet-handler/>
 </beans>
 

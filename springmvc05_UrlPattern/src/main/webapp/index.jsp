@@ -22,5 +22,5 @@
     </form>
     <br/>
   </body>
-    <img src = "image/4.jpg" alt="我是一个静态资源，不能显示"/>
+    <img src = "image/2.jpg" alt="我是一个静态资源，不能显示"/>
 </html>

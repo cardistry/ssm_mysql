@@ -32,38 +32,7 @@
         <servlet-name>myweb</servlet-name>
        <!-- 使用框架的时候，url-pattern可以使用两种值
         1.语法*.xxx,xxx是自定义的扩展名常用的方式。*.do,*.action,*.mvc等等
-        2.使用斜杠 "/"
-              当你的项目中使用了  / ，它会替代 tomcat中的default。
-              导致所有的静态资源都给DispatcherServlet处理， 默认情况下DispatcherServlet没有处理静态资源的能力。
-              没有控制器对象能处理静态资源的访问。所以静态资源（html，js，图片，css）都是404.
-
-              动态资源some.do是可以访问，因为我们程序中有MyController控制器对象，能处理some.do请求。
-
-        -->
-        <url-pattern>/</url-pattern>
+        2.使用”/“-->
+        <url-pattern>*.do</url-pattern>
     </servlet-mapping>
-
-    <filter>
-        <filter-name>characterEncodingFilter</filter-name>
-        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-        <!-- 设置项目中的字符编码-->
-        <init-param>
-            <param-name>encoding</param-name>
-            <param-value>utf-8</param-value>
-        </init-param>
-        <init-param>
-            <param-name>forceRequestEncoding</param-name>
-            <param-value>true</param-value>
-        </init-param>
-        <init-param>
-            <param-name>forceResponseEncoding</param-name>
-            <param-value>true</param-value>
-        </init-param>
-    </filter>
-    <filter-mapping>
-        <filter-name>characterEncodingFilter</filter-name>
-        <!--强制所有的请求先通过过滤器-->
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-
 </web-app>

@@ -15,6 +15,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Controller
 
 public class MyControlller extends HttpServlet {
@@ -31,6 +32,7 @@ public class MyControlller extends HttpServlet {
         //show 逻辑视图名称，项目中配置了视图解析器
         //框架对视图执行forword转发操作
         return "show";
+
     }
 
     //处理器方法返回void， 响应ajax请求
