@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springmvc05_UrlPattern:war">
+    <output-path>$PROJECT_DIR$/springmvc05_UrlPattern/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>springmvc05_UrlPattern</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="springmvc05_UrlPattern-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="springmvc05_UrlPattern:war exploded" />
+    </root>
+  </artifact>
+</component>

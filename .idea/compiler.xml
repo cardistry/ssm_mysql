@@ -10,13 +10,14 @@
         <module name="ch07-hello-mybatis" />
         <module name="spring01_hello" />
         <module name="ch12-hello-mybatis" />
-        <module name="ch01-maven" />
+        <module name="springmvc02_RequstMapping" />
         <module name="ch10-hello-mybatis" />
+        <module name="ch01-maven" />
+        <module name="springmvc05_UrlPattern" />
         <module name="ch02-di-xml" />
         <module name="springmvc04_Return" />
         <module name="ch08_mybatis_dao" />
         <module name="springmvc03_ReciveParam" />
-        <module name="springmvc02_RequstMapping" />
         <module name="ch05-aop-lead" />
         <module name="ch09-hello-mybatis" />
         <module name="ch13_spring_mybatis" />
@@ -46,6 +47,7 @@
       <module name="springmvc02_RequstMapping" target="13" />
       <module name="springmvc03_ReciveParam" target="13" />
       <module name="springmvc04_Return" target="13" />
+      <module name="springmvc05_UrlPattern" target="13" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -70,6 +72,7 @@
       <module name="springmvc02_RequstMapping" options="" />
       <module name="springmvc03_ReciveParam" options="" />
       <module name="springmvc04_Return" options="" />
+      <module name="springmvc05_UrlPattern" options="" />
     </option>
   </component>
 </project>
