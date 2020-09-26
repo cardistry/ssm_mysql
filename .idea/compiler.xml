@@ -24,6 +24,7 @@
         <module name="springmvc06_Path" />
         <module name="ch06-aop-aspectj" />
         <module name="ch14_spring_transaction" />
+        <module name="springmvc07_ssm" />
         <module name="ch04-di-anno" />
         <module name="ch04-di-anno.imi" />
       </profile>
@@ -50,6 +51,7 @@
       <module name="springmvc04_Return" target="13" />
       <module name="springmvc05_UrlPattern" target="13" />
       <module name="springmvc06_Path" target="13" />
+      <module name="springmvc07_ssm" target="13" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -76,6 +78,7 @@
       <module name="springmvc04_Return" options="" />
       <module name="springmvc05_UrlPattern" options="" />
       <module name="springmvc06_Path" options="" />
+      <module name="springmvc07_ssm" options="" />
     </option>
   </component>
 </project>
