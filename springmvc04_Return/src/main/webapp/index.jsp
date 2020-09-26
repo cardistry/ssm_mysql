@@ -16,17 +16,24 @@
                // alert("button click");
                 $.ajax({
                     //url:"returnVoid-ajax.do",
-                    url:"returnStudentJson.do",
+                    //url:"returnStudentJson.do",
+                    //url:"returnStudentJsonArray.do",
+                    url:"returnStringData.do",
                     data:{
                         name:"zhangsan",
                         age:20
                     },
                     type:"post",
                     //dataType:"json",
+                    dataType:"text",
                     success:function (resp) {
                         //resp 从服务器返回的是json格式的字符串
                         //jqery 会把字符串转为json对象，赋值给resp形参
-                        alert(resp.name +" " + resp.age);
+                        // alert(resp.name +" " + resp.age);
+                        // $.each(resp,function (i,n) {
+                            //alert(n.name + " " + n.age)
+                            alert("返回的是文本数据" +resp);
+                        // })
                     }
                 })
             })
