@@ -21,6 +21,7 @@
         <module name="ch05-aop-lead" />
         <module name="ch09-hello-mybatis" />
         <module name="ch13_spring_mybatis" />
+        <module name="springmvc06_Path" />
         <module name="ch06-aop-aspectj" />
         <module name="ch14_spring_transaction" />
         <module name="ch04-di-anno" />
@@ -48,6 +49,7 @@
       <module name="springmvc03_ReciveParam" target="13" />
       <module name="springmvc04_Return" target="13" />
       <module name="springmvc05_UrlPattern" target="13" />
+      <module name="springmvc06_Path" target="13" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -73,6 +75,7 @@
       <module name="springmvc03_ReciveParam" options="" />
       <module name="springmvc04_Return" options="" />
       <module name="springmvc05_UrlPattern" options="" />
+      <module name="springmvc06_Path" options="" />
     </option>
   </component>
 </project>

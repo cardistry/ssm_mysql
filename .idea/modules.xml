@@ -23,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/springmvc03_ReciveParam/springmvc03_ReciveParam.iml" filepath="$PROJECT_DIR$/springmvc03_ReciveParam/springmvc03_ReciveParam.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc04_Return/springmvc04_Return.iml" filepath="$PROJECT_DIR$/springmvc04_Return/springmvc04_Return.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc05_UrlPattern/springmvc05_UrlPattern.iml" filepath="$PROJECT_DIR$/springmvc05_UrlPattern/springmvc05_UrlPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc06_Path/springmvc06_Path.iml" filepath="$PROJECT_DIR$/springmvc06_Path/springmvc06_Path.iml" />
       <module fileurl="file://$PROJECT_DIR$/web01/web01.iml" filepath="$PROJECT_DIR$/web01/web01.iml" />
       <module fileurl="file://$PROJECT_DIR$/web02-requst/web02-requst.iml" filepath="$PROJECT_DIR$/web02-requst/web02-requst.iml" />
       <module fileurl="file://$PROJECT_DIR$/web03_exam/web03_exam.iml" filepath="$PROJECT_DIR$/web03_exam/web03_exam.iml" />
