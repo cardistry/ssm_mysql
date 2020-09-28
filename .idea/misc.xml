@@ -9,6 +9,11 @@
     <file type="web" url="file://$PROJECT_DIR$/springmvc05_UrlPattern" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc06_Path" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc07_ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc08_Forword_Redirect" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc09_Exception_Handler" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc10_intercepter" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc11_intercepter2" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc12_intercepter_permission" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -35,6 +40,11 @@
         <option value="$PROJECT_DIR$/springmvc05_UrlPattern/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc06_Path/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc07_ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc08_Forword_Redirect/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc09_Exception_Handler/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc10_intercepter/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc10_intercepter(2)/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc12_intercepter_permission/pom.xml" />
       </list>
     </option>
   </component>

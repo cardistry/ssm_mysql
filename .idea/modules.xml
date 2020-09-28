@@ -25,6 +25,11 @@
       <module fileurl="file://$PROJECT_DIR$/springmvc05_UrlPattern/springmvc05_UrlPattern.iml" filepath="$PROJECT_DIR$/springmvc05_UrlPattern/springmvc05_UrlPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc06_Path/springmvc06_Path.iml" filepath="$PROJECT_DIR$/springmvc06_Path/springmvc06_Path.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc07_ssm/springmvc07_ssm.iml" filepath="$PROJECT_DIR$/springmvc07_ssm/springmvc07_ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc08_Forword_Redirect/springmvc08_Forword_Redirect.iml" filepath="$PROJECT_DIR$/springmvc08_Forword_Redirect/springmvc08_Forword_Redirect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc09_Exception_Handler/springmvc09_Exception_Handler.iml" filepath="$PROJECT_DIR$/springmvc09_Exception_Handler/springmvc09_Exception_Handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc10_intercepter/springmvc10_intercepter.iml" filepath="$PROJECT_DIR$/springmvc10_intercepter/springmvc10_intercepter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc11_intercepter2/springmvc11_intercepter2.iml" filepath="$PROJECT_DIR$/springmvc11_intercepter2/springmvc11_intercepter2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc12_intercepter_permission/springmvc12_intercepter_permission.iml" filepath="$PROJECT_DIR$/springmvc12_intercepter_permission/springmvc12_intercepter_permission.iml" />
       <module fileurl="file://$PROJECT_DIR$/web01/web01.iml" filepath="$PROJECT_DIR$/web01/web01.iml" />
       <module fileurl="file://$PROJECT_DIR$/web02-requst/web02-requst.iml" filepath="$PROJECT_DIR$/web02-requst/web02-requst.iml" />
       <module fileurl="file://$PROJECT_DIR$/web03_exam/web03_exam.iml" filepath="$PROJECT_DIR$/web03_exam/web03_exam.iml" />

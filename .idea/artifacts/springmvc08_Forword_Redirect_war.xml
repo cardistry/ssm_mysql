@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springmvc08_Forword_Redirect:war">
+    <output-path>$PROJECT_DIR$/springmvc08_Forword_Redirect/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>springmvc08_Forword_Redirect</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="springmvc08_Forword_Redirect-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="springmvc08_Forword_Redirect:war exploded" />
+    </root>
+  </artifact>
+</component>

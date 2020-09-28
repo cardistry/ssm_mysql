@@ -32,6 +32,16 @@
     <file url="file://$PROJECT_DIR$/springmvc06_Path/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springmvc06_Path/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springmvc07_ssm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc08_Forword_Redirect/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc08_Forword_Redirect/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc09_Exception_Handler/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc09_Exception_Handler/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc10_intercepter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc10_intercepter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc11_intercepter2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc11_intercepter2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc12_intercepter_permission/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc12_intercepter_permission/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

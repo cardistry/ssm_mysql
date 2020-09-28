@@ -7,26 +7,31 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch10_mybatis_params" />
-        <module name="ch07-hello-mybatis" />
-        <module name="spring01_hello" />
-        <module name="ch12-hello-mybatis" />
-        <module name="springmvc02_RequstMapping" />
-        <module name="ch10-hello-mybatis" />
-        <module name="ch01-maven" />
-        <module name="springmvc05_UrlPattern" />
-        <module name="ch02-di-xml" />
-        <module name="springmvc04_Return" />
-        <module name="ch08_mybatis_dao" />
         <module name="springmvc03_ReciveParam" />
+        <module name="springmvc05_UrlPattern" />
+        <module name="ch12-hello-mybatis" />
+        <module name="ch01-maven" />
+        <module name="ch07-hello-mybatis" />
+        <module name="springmvc12_intercepter_permission" />
+        <module name="springmvc07_ssm" />
+        <module name="ch02-di-xml" />
+        <module name="ch14_spring_transaction" />
+        <module name="springmvc04_Return" />
+        <module name="ch10-hello-mybatis" />
+        <module name="springmvc11_intercepter2" />
+        <module name="springmvc02_RequstMapping" />
+        <module name="ch04-di-anno.imi" />
         <module name="ch05-aop-lead" />
         <module name="ch09-hello-mybatis" />
         <module name="ch13_spring_mybatis" />
         <module name="springmvc06_Path" />
         <module name="ch06-aop-aspectj" />
-        <module name="ch14_spring_transaction" />
-        <module name="springmvc07_ssm" />
+        <module name="ch08_mybatis_dao" />
+        <module name="springmvc08_Forword_Redirect" />
         <module name="ch04-di-anno" />
-        <module name="ch04-di-anno.imi" />
+        <module name="springmvc10_intercepter" />
+        <module name="springmvc09_Exception_Handler" />
+        <module name="spring01_hello" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -52,6 +57,11 @@
       <module name="springmvc05_UrlPattern" target="13" />
       <module name="springmvc06_Path" target="13" />
       <module name="springmvc07_ssm" target="13" />
+      <module name="springmvc08_Forword_Redirect" target="13" />
+      <module name="springmvc09_Exception_Handler" target="13" />
+      <module name="springmvc10_intercepter" target="13" />
+      <module name="springmvc11_intercepter2" target="13" />
+      <module name="springmvc12_intercepter_permission" target="13" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -79,6 +89,11 @@
       <module name="springmvc05_UrlPattern" options="" />
       <module name="springmvc06_Path" options="" />
       <module name="springmvc07_ssm" options="" />
+      <module name="springmvc08_Forword_Redirect" options="" />
+      <module name="springmvc09_Exception_Handler" options="" />
+      <module name="springmvc10_intercepter" options="" />
+      <module name="springmvc11_intercepter2" options="" />
+      <module name="springmvc12_intercepter_permission" options="" />
     </option>
   </component>
 </project>
