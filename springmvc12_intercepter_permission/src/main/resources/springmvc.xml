@@ -19,18 +19,13 @@
 <!--    声明拦截器-->
 
     <mvc:interceptors>
-<!--        拦截器1-->
         <mvc:interceptor>
 <!--            path:uri 地址
-                拦截user 开头的所有-->
-            <mvc:mapping path="/user/**"/>
+           -->
+            <mvc:mapping path="/**"/>
             <bean class="com.bjpowernode.handler.MyIntercepter"/>
         </mvc:interceptor>
-<!--        拦截器2-->
-        <mvc:interceptor>
-            <mvc:mapping path="/user/**"/>
-            <bean class="com.bjpowernode.handler.MyIntercepter2"/>
-        </mvc:interceptor>
+
     </mvc:interceptors>
 
     

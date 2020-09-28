@@ -7,7 +7,6 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServlet;
 
 @Controller
-@RequestMapping(value = "/user")
 public class MyControlller extends HttpServlet {
 
 
