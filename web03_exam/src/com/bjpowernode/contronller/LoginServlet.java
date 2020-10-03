@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
             HttpSession session = request.getSession();
             response.sendRedirect("/MyWeb/index.html");
         }else{
-            response.sendRedirect("/MyWeb/logi n_error.html");
+            response.sendRedirect("/MyWeb/login_error.html");
         }
     }
 }

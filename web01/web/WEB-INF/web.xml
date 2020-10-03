@@ -7,18 +7,13 @@
     <servlet>
         <servlet-name>mm</servlet-name>
         <servlet-class>com.bjpowernode.controller.OneServlet</servlet-class>
-        <!--在默认的情况下，网站中所有实现servlet接口的类都是在http 服务器接收到对于当前servlet 实现类
-        的第一次请求时由http 服务器自动创建这个类的实例对象。
-        我们可以手动配置，在http服务器启动时就让http服务器自动创建某个servlet 接口的实现类对象-->
-     <!--   在 <load-on-startup></load-on-startup填一个大于0的数，在http 服务器运行期间，
-        一个servlet接口实现类只能被创建出一个对象
-        在http服务器关时，自动将所有的servlet对象销毁-->
+
         <load-on-startup>9</load-on-startup>
     </servlet>
-<!--    别名-->
+
     <servlet-mapping>
         <servlet-name>mm</servlet-name>
-<!--        别名必须以/开头-->
+
         <url-pattern>/one</url-pattern>
     </servlet-mapping>
 
