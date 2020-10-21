@@ -8,14 +8,12 @@
         http://www.springframework.org/schema/context
          https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <context:component-scan base-package="com.bjpowernode.controller"/>
-<!--    声明springmvc 框架中的视图解析器，帮助开发人员设置视图文件的路径？-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-<!--        前缀：视图文件的路径-->
         <property name="prefix" value="/WEB-INF/view/"/>
-<!--        后缀，视图文件的扩展名-->
         <property name="suffix" value=".jsp"/>
         
     </bean>
+    <!--开启消息转换器HttpMessageConverter，将Object 转换成json数据-->
     <mvc:annotation-driven />
     
     

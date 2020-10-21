@@ -97,7 +97,7 @@ public class MyControlller extends HttpServlet {
      *    把李四同学的student对象转为json， 调用Jackson的ObjectMapper实现转为json array
      *    contentType: application/json;charset=utf-8
      *
-     *  3.框架会调用@Respo  nseBody把2的结果数据输出到浏览器， ajax请求处理完成
+     *  3.框架会调用@ResponseBody把2的结果数据输出到浏览器， ajax请求处理完成
      */
     @ResponseBody
     @RequestMapping(value = "/returnStudentJsonArray.do")
