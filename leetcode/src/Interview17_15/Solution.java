@@ -20,7 +20,7 @@ class Solution {
         }
         public void insert(String word){
             TreeNode curr = root;
-            for(int i=0;i<word.length();i++){
+            for(int i=0;i < word.length();i++){
                 int node = word.charAt(i)-'a';
                 if(curr.son[node]==null)    curr.son[node] = new TreeNode();
                 curr = curr.son[node];
@@ -82,3 +82,4 @@ class Solution {
 }
 
 
+          
