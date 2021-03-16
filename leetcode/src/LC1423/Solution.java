@@ -2,7 +2,7 @@ package LC1423;
 
 import java.util.Arrays;
 
-class Solution {
+public class Solution {
     public int maxScore(int[] cardPoints, int k) {
         int n = cardPoints.length;
         // 滑动窗口大小为 n-k

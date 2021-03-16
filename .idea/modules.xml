@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/ch14_spring_transaction/ch14_spring_transaction.iml" filepath="$PROJECT_DIR$/ch14_spring_transaction/ch14_spring_transaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/day1/day1.iml" filepath="$PROJECT_DIR$/day1/day1.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc-test/jdbc-test.iml" filepath="$PROJECT_DIR$/jdbc-test/jdbc-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/juc/juc.iml" filepath="$PROJECT_DIR$/juc/juc.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc01_hello/spring01_hello.iml" filepath="$PROJECT_DIR$/springmvc01_hello/spring01_hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc02_RequstMapping/springmvc02_RequstMapping.iml" filepath="$PROJECT_DIR$/springmvc02_RequstMapping/springmvc02_RequstMapping.iml" />

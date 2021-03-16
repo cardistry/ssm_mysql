@@ -7,59 +7,61 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch10_mybatis_params" />
-        <module name="springmvc03_ReciveParam" />
-        <module name="springmvc05_UrlPattern" />
-        <module name="ch12-hello-mybatis" />
-        <module name="ch01-maven" />
         <module name="ch07-hello-mybatis" />
-        <module name="springmvc12_intercepter_permission" />
-        <module name="springmvc07_ssm" />
-        <module name="ch02-di-xml" />
-        <module name="ch14_spring_transaction" />
-        <module name="springmvc04_Return" />
-        <module name="ch10-hello-mybatis" />
+        <module name="spring01_hello" />
         <module name="springmvc11_intercepter2" />
         <module name="springmvc02_RequstMapping" />
-        <module name="ch04-di-anno.imi" />
+        <module name="springmvc12_intercepter_permission" />
+        <module name="ch10-hello-mybatis" />
+        <module name="ch01-maven" />
+        <module name="juc" />
+        <module name="springmvc08_Forword_Redirect" />
+        <module name="ch02-di-xml" />
+        <module name="springmvc10_intercepter" />
+        <module name="springmvc07_ssm" />
+        <module name="springmvc05_UrlPattern" />
+        <module name="springmvc04_Return" />
+        <module name="springmvc03_ReciveParam" />
         <module name="ch05-aop-lead" />
         <module name="ch09-hello-mybatis" />
         <module name="ch13_spring_mybatis" />
         <module name="springmvc06_Path" />
         <module name="ch06-aop-aspectj" />
-        <module name="ch08_mybatis_dao" />
-        <module name="springmvc08_Forword_Redirect" />
+        <module name="ch14_spring_transaction" />
+        <module name="ch12-hello-mybatis" />
         <module name="ch04-di-anno" />
-        <module name="springmvc10_intercepter" />
+        <module name="ch04-di-anno.imi" />
+        <module name="ch08_mybatis_dao" />
         <module name="springmvc09_Exception_Handler" />
-        <module name="spring01_hello" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ch01-maven" target="13" />
-      <module name="ch02-di-xml" target="13" />
-      <module name="ch04-di-anno" target="13" />
-      <module name="ch05-aop-lead" target="13" />
-      <module name="ch06-aop-aspectj" target="13" />
-      <module name="ch07-hello-mybatis" target="13" />
-      <module name="ch08_mybatis_dao" target="13" />
-      <module name="ch09-hello-mybatis" target="13" />
-      <module name="ch10-hello-mybatis" target="13" />
-      <module name="ch10_mybatis_params" target="13" />
-      <module name="ch12-hello-mybatis" target="13" />
-      <module name="ch13_spring_mybatis" target="13" />
-      <module name="ch14_spring_transaction" target="13" />
-      <module name="spring01_hello" target="13" />
-      <module name="springmvc02_RequstMapping" target="13" />
-      <module name="springmvc03_ReciveParam" target="13" />
-      <module name="springmvc04_Return" target="13" />
-      <module name="springmvc05_UrlPattern" target="13" />
-      <module name="springmvc06_Path" target="13" />
-      <module name="springmvc07_ssm" target="13" />
-      <module name="springmvc08_Forword_Redirect" target="13" />
-      <module name="springmvc09_Exception_Handler" target="13" />
-      <module name="springmvc10_intercepter" target="13" />
+      <module name="ch01-maven" target="8" />
+      <module name="ch02-di-xml" target="8" />
+      <module name="ch04-di-anno" target="8" />
+      <module name="ch05-aop-lead" target="8" />
+      <module name="ch06-aop-aspectj" target="8" />
+      <module name="ch07-hello-mybatis" target="8" />
+      <module name="ch08_mybatis_dao" target="8" />
+      <module name="ch09-hello-mybatis" target="8" />
+      <module name="ch10-hello-mybatis" target="8" />
+      <module name="ch10_mybatis_params" target="8" />
+      <module name="ch12-hello-mybatis" target="8" />
+      <module name="ch13_spring_mybatis" target="8" />
+      <module name="ch14_spring_transaction" target="8" />
+      <module name="juc" target="8" />
+      <module name="spring01_hello" target="8" />
+      <module name="springmvc02_RequstMapping" target="8" />
+      <module name="springmvc03_ReciveParam" target="8" />
+      <module name="springmvc04_Return" target="8" />
+      <module name="springmvc05_UrlPattern" target="8" />
+      <module name="springmvc06_Path" target="8" />
+      <module name="springmvc07_ssm" target="8" />
+      <module name="springmvc08_Forword_Redirect" target="8" />
+      <module name="springmvc09_Exception_Handler" target="8" />
+      <module name="springmvc10_intercepter" target="8" />
       <module name="springmvc11_intercepter2" target="13" />
-      <module name="springmvc12_intercepter_permission" target="13" />
+      <module name="springmvc12_intercepter_permission" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -78,6 +80,7 @@
       <module name="ch12-hello-mybatis" options="" />
       <module name="ch13_spring_mybatis" options="" />
       <module name="ch14_spring_transaction" options="" />
+      <module name="juc" options="" />
       <module name="spring01_hello" options="" />
       <module name="springmvc02_RequstMapping" options="" />
       <module name="springmvc03_ReciveParam" options="" />

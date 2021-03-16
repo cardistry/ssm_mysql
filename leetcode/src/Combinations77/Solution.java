@@ -7,7 +7,7 @@ class Solution {
     private List<List<Integer>> res = new ArrayList<List<Integer>>();
     private List<Integer> tmp = new ArrayList<Integer>();
 
-    public List<List<Integer>> combine(int n, int k) {
+    synchronized public List<List<Integer>> combine(int n, int k) {
         int cur = 1;
         DFS(n, k, cur);
         return res;

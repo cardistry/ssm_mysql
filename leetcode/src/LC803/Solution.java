@@ -9,7 +9,7 @@ public class Solution {
 
     public int[] hitBricks(int[][] grid, int[][] hits) {
         this.rows = grid.length;
-            this.cols = grid[0]. ;
+            this.cols = grid[0].length ;
 
         // 第 1 步：把 grid 中的砖头全部击碎，通常算法问题不能修改输入数据，这一步非必需，可以认为是一种答题规范
         int[][] copy = new int[rows][cols];
@@ -22,7 +22,7 @@ public class Solution {
         // 把 copy 中的砖头全部击碎
         for (int[] hit : hits) {
             copy[hit[0]][hit[1]] = 0;
-        }m
+        }
 
         // 第 2 步：建图，把砖块和砖块的连接关系输入并查集，size 表示二维网格的大小，也表示虚拟的「屋顶」在并查集中的编号
         int size = rows * cols;

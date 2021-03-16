@@ -1,7 +1,7 @@
 package Interview1708;
 
 import java.util.Arrays;
-class Solution {
+public class Solution {
     static final int BIT = 14;
     static final int BASE = (1 << BIT) - 1;
     public int bestSeqAtIndex(int[] height, int[] weight) {
